@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contacto — Agustín Rodríguez</title>
+    <meta name="description" content="Contacto: enviá un mensaje rápido o conectá por LinkedIn." />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="../styles.css?v=20260209-4" />
+  </head>
+
+  <body>
+    <div class="bg" aria-hidden="true">
+      <canvas id="bgCanvas"></canvas>
+      <div class="bg__overlay"></div>
+    </div>
+
+    <a class="skip" href="#contenido">Saltar al contenido</a>
+
+    <header class="header">
+      <div class="container header__inner">
+        <a class="brand" href="../" aria-label="Ir al inicio">
+          <span class="brand__mark" aria-hidden="true">
+            <img class="brand__img" src="../fotoperfil.jpg" alt="" width="34" height="34" decoding="async" />
+          </span>
+          <span class="brand__text">Agustín Rodríguez</span>
+        </a>
+
+        <nav class="nav" aria-label="Navegación principal">
+          <div class="nav__actions">
+            <a class="btn btn--small btn--ghost" href="../Agustin Rodriguez.pdf" download>Descargar CV</a>
+
+            <button class="themeToggle" id="themeToggle" type="button" aria-label="Cambiar tema" aria-pressed="false">
+              <span class="themeToggle__track" aria-hidden="true">
+                <span class="themeToggle__thumb" aria-hidden="true"></span>
+              </span>
+              <span class="themeToggle__text">Tema</span>
+            </button>
+          </div>
+
+          <button class="nav__toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu">
+            <span class="nav__toggleBars" aria-hidden="true"></span>
+            <span class="srOnly">Abrir/cerrar menú</span>
+          </button>
+
+          <ul class="nav__menu" id="navMenu">
+            <li><a class="nav__link" href="../#sobre-mi">Sobre mí</a></li>
+            <li><a class="nav__link" href="../servicios/">Servicios</a></li>
+            <li><a class="nav__link" href="../faq/">FAQ</a></li>
+            <li><a class="nav__link" href="../contacto/" aria-current="page">Contacto</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="contenido">
+      <section class="section section--contact" id="inicio">
+        <div class="container">
+          <div class="section__head">
+            <h2>Contacto</h2>
+            <p class="section__sub">Escribime por email o conectemos por LinkedIn.</p>
+          </div>
+
+          <div class="contact">
+            <div class="panel">
+              <h3>Mensaje rápido</h3>
+              <form id="contactForm" class="form">
+                <label>
+                  <span>Nombre</span>
+                  <input name="name" autocomplete="name" required />
+                </label>
+                <label>
+                  <span>Email</span>
+                  <input name="email" type="email" autocomplete="email" required />
+                </label>
+                <label>
+                  <span>Mensaje</span>
+                  <textarea name="message" rows="5" required></textarea>
+                </label>
+                <button class="btn btn--primary" type="submit">Generar email</button>
+                <p class="muted">Esto no envía nada automáticamente: abre tu cliente de correo con el mensaje prearmado.</p>
+              </form>
+            </div>
+
+            <div class="panel">
+              <h3>Links</h3>
+              <ul class="contact__links">
+                <li><span class="mono">Email:</span> <a href="#" id="emailLink">(pendiente)</a></li>
+                <li><span class="mono">LinkedIn:</span> <a href="#" id="liLink">(pendiente)</a></li>
+              </ul>
+              <p class="muted">También podés descargar mi CV desde el botón del menú superior.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__inner">
+        <p class="muted">© <span id="year"></span> Agustín Rodríguez. Hecho con HTML/CSS/JS.</p>
+      </div>
+    </footer>
+
+    <script src="../script.js?v=20260209-1"></script>
+  </body>
+</html>

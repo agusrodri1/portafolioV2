@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Servicios — Agustín Rodríguez</title>
+    <meta
+      name="description"
+      content="Servicios de ciberseguridad: gestión de vulnerabilidades, hardening y monitoreo SOC (Wazuh)."
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="../styles.css?v=20260209-4" />
+  </head>
+
+  <body>
+    <div class="bg" aria-hidden="true">
+      <canvas id="bgCanvas"></canvas>
+      <div class="bg__overlay"></div>
+    </div>
+
+    <a class="skip" href="#contenido">Saltar al contenido</a>
+
+    <header class="header">
+      <div class="container header__inner">
+        <a class="brand" href="../" aria-label="Ir al inicio">
+          <span class="brand__mark" aria-hidden="true">
+            <img class="brand__img" src="../fotoperfil.jpg" alt="" width="34" height="34" decoding="async" />
+          </span>
+          <span class="brand__text">Agustín Rodríguez</span>
+        </a>
+
+        <nav class="nav" aria-label="Navegación principal">
+          <div class="nav__actions">
+            <a class="btn btn--small btn--ghost" href="../Agustin Rodriguez.pdf" download>Descargar CV</a>
+
+            <button class="themeToggle" id="themeToggle" type="button" aria-label="Cambiar tema" aria-pressed="false">
+              <span class="themeToggle__track" aria-hidden="true">
+                <span class="themeToggle__thumb" aria-hidden="true"></span>
+              </span>
+              <span class="themeToggle__text">Tema</span>
+            </button>
+          </div>
+
+          <button class="nav__toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu">
+            <span class="nav__toggleBars" aria-hidden="true"></span>
+            <span class="srOnly">Abrir/cerrar menú</span>
+          </button>
+
+          <ul class="nav__menu" id="navMenu">
+            <li><a class="nav__link" href="../#sobre-mi">Sobre mí</a></li>
+            <li><a class="nav__link" href="../servicios/" aria-current="page">Servicios</a></li>
+            <li><a class="nav__link" href="../faq/">FAQ</a></li>
+            <li><a class="nav__link" href="../contacto/">Contacto</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="contenido">
+      <section class="section" id="inicio">
+        <div class="container">
+          <div class="section__head">
+            <h2>Servicios</h2>
+            <p class="section__sub">Paquetes claros, entregables concretos y foco en reducción de riesgo.</p>
+          </div>
+
+          <div class="cards3">
+            <article class="service">
+              <h3>Gestión de vulnerabilidades</h3>
+              <p class="muted">Detección, priorización y plan de remediación con enfoque en riesgo real.</p>
+              <ul class="list list--compact">
+                <li>Análisis y validación de hallazgos</li>
+                <li>Prioridad por impacto / criticidad</li>
+                <li>Checklist de remediación + evidencias</li>
+              </ul>
+            </article>
+
+            <article class="service">
+              <h3>Hardening (Linux / Windows)</h3>
+              <p class="muted">Baseline seguro y mejoras medibles en configuración.</p>
+              <ul class="list list--compact">
+                <li>Revisión de configuración y permisos</li>
+                <li>Buenas prácticas (CIS cuando aplica)</li>
+                <li>Validación post-cambios y registro</li>
+              </ul>
+            </article>
+
+            <article class="service">
+              <h3>Monitoreo SOC (Wazuh SIEM)</h3>
+              <p class="muted">Triage, gestión de incidentes y reporting para stakeholders.</p>
+              <ul class="list list--compact">
+                <li>Monitoreo de agentes y alertas</li>
+                <li>Investigación inicial + escalamiento</li>
+                <li>Informes técnicos recurrentes</li>
+              </ul>
+            </article>
+          </div>
+
+          <div class="callout">
+            <p>
+              También puedo ayudar con <strong>pentesting en AWS</strong>, <strong>OSINT</strong>,
+              <strong>políticas y concientización</strong> y <strong>respuesta a incidentes</strong>.
+              Lo detallamos según tu industria.
+            </p>
+            <a class="btn btn--ghost" href="/contacto/">Pedir propuesta</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__inner">
+        <p class="muted">© <span id="year"></span> Agustín Rodríguez. Hecho con HTML/CSS/JS.</p>
+      </div>
+    </footer>
+
+    <script src="../script.js?v=20260209-1"></script>
+  </body>
+</html>

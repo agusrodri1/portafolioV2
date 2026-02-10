@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Agustín Rodríguez — Analista en Ciberseguridad</title>
+    <meta
+      name="description"
+      content="Portfolio de Agustín Rodríguez, analista en ciberseguridad. Servicios freelance: auditorías, hardening, monitoreo, respuesta a incidentes y consultoría."
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles.css?v=20260209-4" />
+  </head>
+
+  <body>
+    <!-- Fondo dinámico -->
+    <div class="bg" aria-hidden="true">
+      <canvas id="bgCanvas"></canvas>
+      <div class="bg__overlay"></div>
+    </div>
+
+    <a class="skip" href="#contenido">Saltar al contenido</a>
+
+    <header class="header">
+      <div class="container header__inner">
+        <a class="brand" href="#inicio" aria-label="Ir al inicio">
+          <span class="brand__text">Agustín Rodríguez</span>
+        </a>
+
+        <nav class="nav" aria-label="Navegación principal">
+          <div class="nav__actions">
+            <a class="btn btn--small btn--ghost" href="Agustin Rodriguez.pdf" download>Descargar CV</a>
+
+            <button class="themeToggle" id="themeToggle" type="button" aria-label="Cambiar tema" aria-pressed="false">
+              <span class="themeToggle__track" aria-hidden="true">
+                <span class="themeToggle__thumb" aria-hidden="true"></span>
+              </span>
+              <span class="themeToggle__text">Tema</span>
+            </button>
+          </div>
+
+          <button class="nav__toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu">
+            <span class="nav__toggleBars" aria-hidden="true"></span>
+            <span class="srOnly">Abrir/cerrar menú</span>
+          </button>
+
+          <ul class="nav__menu" id="navMenu">
+            <li><a class="nav__link" href="#sobre-mi">Sobre mí</a></li>
+            <li><a class="nav__link" href="/servicios/">Servicios</a></li>
+            <li><a class="nav__link" href="/faq/">FAQ</a></li>
+            <li><a class="nav__link" href="/contacto/">Contacto</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="contenido">
+      <section id="inicio" class="section hero">
+        <div class="container hero__grid">
+          <div class="hero__copy">
+            <p class="kicker">Analista en Ciberseguridad • Freelancer</p>
+            <div class="hero__headline">
+              <div class="avatar avatar--hero">
+                <img
+                  class="avatar__img"
+                  src="fotoperfil.jpg"
+                  alt="Foto de perfil de Agustín Rodríguez"
+                  width="320"
+                  height="320"
+                  loading="eager"
+                  decoding="async"
+                />
+              </div>
+
+              <h1 class="hero__title">
+                Protejo sistemas, reduzco riesgo y dejo evidencia clara
+                <span class="hero__titleAccent">para decisiones de negocio</span>.
+              </h1>
+            </div>
+
+            <div class="hero__card" role="region" aria-label="Resumen rápido">
+              <div class="card">
+                <dl class="meta">
+                  <div class="meta__row">
+                    <dt>Disponibilidad</dt>
+                    <dd><span class="dot dot--ok"></span>Freelance / Full-time</dd>
+                  </div>
+                  <div class="meta__row">
+                    <dt>Enfoque</dt>
+                    <dd>Seguridad defensiva + procesos</dd>
+                  </div>
+                  <div class="meta__row">
+                    <dt>Ubicación</dt>
+                    <dd>Remoto (AR)</dd>
+                  </div>
+                </dl>
+              </div>
+            </div>
+
+            <p class="hero__subtitle">
+              Auditorías, hardening, monitoreo y respuesta a incidentes. Entregables listos para equipos técnicos y
+              management.
+            </p>
+
+            <div class="hero__cta">
+              <a class="btn btn--primary" href="/contacto/">Hablemos</a>
+              <a class="btn btn--ghost" href="/servicios/">Ver servicios</a>
+            </div>
+
+            <div class="hero__chips" aria-label="Áreas">
+              <span class="chip">SOC / Blue Team</span>
+              <span class="chip">Hardening</span>
+              <span class="chip">Risk & Compliance</span>
+              <span class="chip">IR / Forensics (básico)</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="sobre-mi" class="section">
+        <div class="container">
+          <div class="section__head">
+            <h2>Sobre mí</h2>
+            <p class="section__sub">
+              Resumen orientado a empresas: qué hago, cómo trabajo y cómo se traduce en menos incidentes.
+            </p>
+          </div>
+
+          <div class="grid2">
+            <div class="panel">
+              <h3>Perfil profesional</h3>
+              <p class="muted">
+                Analista de Ciberseguridad Jr. con experiencia en monitoreo SOC, pentesting y gestión de vulnerabilidades.
+                Base técnica en automatización con Python, entornos Linux y administración de redes. Experiencia práctica
+                con SIEM (Wazuh), metodologías OWASP y despliegues seguros en AWS.
+              </p>
+
+              <h3>Experiencia</h3>
+              <div class="timeline">
+                <div class="timeline__item">
+                  <div class="timeline__top">
+                    <p class="timeline__role">Analista de Ciberseguridad Jr.</p>
+                    <p class="timeline__meta">Fixear Cybersecurity • Jul 2025 — Actualidad</p>
+                  </div>
+                  <ul class="list list--compact">
+                    <li>Monitoreo diario de agentes Wazuh y gestión de incidentes en SOC.</li>
+                    <li>Pentesting en entornos AWS para identificar brechas de seguridad.</li>
+                    <li>OSINT para auditorías de clientes y revisión de exposición externa.</li>
+                    <li>Informes quincenales técnicos sobre alertas y estado de seguridad.</li>
+                    <li>Participación en concientización y simulaciones de phishing corporativo.</li>
+                  </ul>
+                </div>
+
+                <div class="timeline__item">
+                  <div class="timeline__top">
+                    <p class="timeline__role">Auxiliar Gastronomico</p>
+                    <p class="timeline__meta">Cencosud Jumbo • Dic 2022 — Jun 2025</p>
+                  </div>
+                  <ul class="list list--compact">
+                    <li>Trabajo colaborativo en entornos dinámicos, orientado a resolver problemas.</li>
+                    <li>Gestión eficiente de stock y procesos operativos.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="panel">
+              <h3>Habilidades técnicas</h3>
+              <div class="tags">
+                <span class="tag">Python</span>
+                <span class="tag">JavaScript</span>
+                <span class="tag">SIEM (Wazuh)</span>
+                <span class="tag">SOC</span>
+                <span class="tag">Pentesting</span>
+                <span class="tag">OSINT</span>
+                <span class="tag">OWASP</span>
+                <span class="tag">Análisis de vulnerabilidades</span>
+                <span class="tag">AWS Security</span>
+                <span class="tag">Linux</span>
+                <span class="tag">Redes & protocolos</span>
+              </div>
+
+              <div class="spacer" aria-hidden="true"></div>
+
+              <h3>Educación & extras</h3>
+              <ul class="list">
+                <li><strong>Ingeniería en Informática</strong> — Universidad del Salvador (USAL) (Feb 2022 — Actualidad)</li>
+                <li><strong>Inglés</strong>: Avanzado (Profesional)</li>
+                <li>
+                  <strong>Voluntariado Educativo (Beca Municipal)</strong> (2022): enseñanza de lectura y matemáticas a
+                  niños.
+                </li>
+                <li><strong>Intercambio cultural en Oxford</strong> (Ene 2020)</li>
+                <li><strong>Debate ODS ONU 2030 (USAL)</strong>: participación en jornadas de debate.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__inner">
+        <p class="muted">© <span id="year"></span> Agustín Rodríguez. Hecho con HTML/CSS/JS.</p>
+        <a class="toTop" href="#inicio">Volver arriba</a>
+      </div>
+    </footer>
+
+    <script src="script.js?v=20260209-1"></script>
+  </body>
+</html>
